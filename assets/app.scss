@@ -1,0 +1,19 @@
+// https: //v3.nuxtjs.org/guide/features/assets#global-styles-imports
+
+.doc-page {
+    a {
+        @apply transition-colors;
+    }
+    a:hover {
+        @apply text-orange-500;
+    }
+    ul {
+        @apply list-disc my-4;
+        li {
+            @apply text-gray-900 my-1;
+        }
+    }
+    code {
+        @apply text-gray-800 bg-gray-100;
+    }
+}

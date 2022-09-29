@@ -41,11 +41,11 @@ export default {
 
 <style>
   .tabs-component button {
-    @apply px-4 py-1 border-b-2 font-semibold bg-gray-300 border-gray-500 transition-colors;
+    @apply px-4 py-1 border-b-2 font-semibold bg-orange-100 border-orange-300 transition-colors;
     margin-left: 0.1rem;
     margin-right: 0.1rem;
   }
   .tabs-component button:hover, .tabs-component button.active {
-    @apply border-teal-600 bg-teal-600/25 text-teal-600;
+    @apply border-orange-500 bg-orange-500/25 text-orange-500;
   }
 </style>

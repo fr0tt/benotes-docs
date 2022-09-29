@@ -2,19 +2,18 @@ export default defineAppConfig({
   title: 'Hello App Config',
   sidebar: [
     {
-      name: 'Introduction',
+      name: 'Installation',
       pages: [
-        {
-          name: 'Getting started', link: '/getting-started'
-        }
+        { name: 'Classic', link: '/docs/installation/classic' },
+        { name: 'docker-compose', link: '/docs/installation/docker-compose' },
+        { name: 'Docker', link: '/docs/installation/docker' },
+        { name: 'Heroku', link: '/docs/installation/heroku' }
       ]
     },
     {
       name: 'Test',
       pages: [
-        {
-          name: 'Test test', link: '/test-test'
-        }
+        { name: 'Test test', link: '/docs/test-test' }
       ]
     }
   ]
