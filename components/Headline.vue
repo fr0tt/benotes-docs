@@ -1,0 +1,5 @@
+<template>
+    <h1 class="text-2xl my-6 font-semibold">
+        <slot />
+    </h1>
+</template>

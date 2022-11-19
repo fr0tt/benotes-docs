@@ -33,7 +33,7 @@
         </section>
       </aside>
 
-      <div class="doc-page px-4 py-12">
+      <div class="documentation px-4 py-12">
         <slot />
       </div>
 
@@ -50,7 +50,7 @@ export default {
 </script>
 
 <style>
-  .doc-page {
+  .documentation {
     max-width: 1200px;
     margin-right: auto;
   }
