@@ -2,7 +2,7 @@
 
 <Headline>Docker with CLI</Headline>
 
-Docker Image can be found <a href="https://hub.docker.com/r/fr0tt/benotes">here</a>
+Docker Image can be found <a href="https://hub.docker.com/r/fr0tt/benotes">here</a>.
 
 <SubHeadline>Installation</SubHeadline>
 
@@ -18,14 +18,12 @@ Docker Image can be found <a href="https://hub.docker.com/r/fr0tt/benotes">here<
         (For instance for PostgreSQL have a look at <a href="https://github.com/fr0tt/benotes/issues/14">this issue</a>)
     </li>
     <li>
-        <code>  <!-- @TODO use codeblock instead  -->
-            docker run -p 8000:80 -it --rm \
-                -v benotes_storage:/var/www/storage \
-                -v "$(pwd)"/nginx/logs/:/var/lib/nginx/logs/ \
-                -v "$(pwd)"/.env:/var/www/.env \
-                --env-file ./.env \
-                --name benotes fr0tt/benotes
-        </code>
+        <pre><code>docker run -p 8000:80 -it --rm \
+    -v benotes_storage:/var/www/storage \
+    -v "$(pwd)"/nginx/logs/:/var/lib/nginx/logs/ \
+    -v "$(pwd)"/.env:/var/www/.env \
+    --env-file ./.env \
+    --name benotes fr0tt/benotes</code></pre>
         <Comment>run the docker container (with a named volume to store data, a bind mount for webserver logs and env variables from your .env file)</Comment>
     </li>
     <li>
