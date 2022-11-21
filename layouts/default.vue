@@ -46,6 +46,16 @@
 import '~/assets/app.scss'
 export default {
 
+  mounted () {
+    document.querySelectorAll('h3').forEach(headline => {
+      console.log(headline)
+      const id = headline.innerHTML.trim().toLowerCase()
+        .replaceAll(' ', '-')
+        .replaceAll(':', '')
+      headline.id = id
+      headline.parentElement.querySelector('a').href = '#' + id
+    })
+  }
 }
 </script>
 
