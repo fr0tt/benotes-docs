@@ -11,6 +11,7 @@
       </Tab>
     </Tabs>
     -->
+    <Headline>Manual Installation</Headline>
 
     <SubHeadline>Prerequisite</SubHeadline>
 
@@ -24,8 +25,6 @@
         <li>PHP ≥ 7.2.5</li>
         <li>MySQL, Postgres, SQLite or SQL Server (currently only MySQL and PostgreSQL and SQLite were tested)</li>
     </ul>
-
-    <br>
 
     <SubHeadline>Installation</SubHeadline>
 
