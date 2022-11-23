@@ -1,51 +1,50 @@
 <script setup>
-import { ref, provide } from 'vue'
-const currentName = ref('current')
+import { ref, reactive, provide, onMounted } from 'vue'
+const slots = useSlots()
+const currentName = ref(0)
+const state = reactive({ tabs: [] })
+
+onMounted(() => {
+  if (slots === null)
+    return
+  slots.default?.().map((child) => {
+    state.tabs.push(child)
+  })
+  currentName.value = state.tabs[0].props.name
+})
+
+function showTab (index, tab, name) {
+  currentName.value = name
+}
+
 provide('currentName', currentName)
+
 </script>
+
 <template>
   <div class="tabs-component">
-    <button v-for="(tab, i) in tabs" :key="i" @click="showTab(i, tab, tab.props.name)">
+    <button v-for="(tab, i) in state.tabs" :key="i" @click="showTab(i, tab, tab.props.name)"
+      :class="[currentName === tab.props.name ? 'is-active' : '']">
       {{ tab.props.name }}
     </button>
-    <div class="">
+    <div class="my-2">
       <slot />
     </div>
   </div>
 </template>
-<script>
-import { provide, reactive, readonly } from 'vue'
-
-export default {
-  data() {
-    return {
-      tabs: []
-    }
-  },
-  methods: {
-    showTab (index, tab, name) {
-      this.currentName = name
-    }
-  },
-  mounted() {
-    if (this.$slots !== null) {
-      this.$slots.default?.().map((child) => {
-        this.tabs.push(child)
-      })
-      this.currentName = this.tabs[0].props.name // this.currentTab = this.tabs[0]
-
-    }
-  }
-}
-</script>
 
 <style>
+  .tabs-component {
+    @apply my-8;
+  }
   .tabs-component button {
-    @apply px-4 py-1 border-b-2 font-semibold bg-orange-100 border-orange-300 transition-colors;
+    @apply px-4 py-1 border-b-2 font-medium bg-orange-100 border-orange-700 transition-colors;
     margin-left: 0.1rem;
     margin-right: 0.1rem;
   }
-  .tabs-component button:hover, .tabs-component button.active {
-    @apply border-orange-500 bg-orange-500/25 text-orange-500;
+  .tabs-component button.is-active,
+  .tabs-component button:hover,
+  .tabs-component button.active {
+    @apply bg-orange-500 text-white;
   }
 </style>
