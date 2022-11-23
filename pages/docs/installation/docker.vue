@@ -15,7 +15,7 @@ Docker Image can be found <a href="https://hub.docker.com/r/fr0tt/benotes">here<
         edit <code>.env</code> by setting a random secret for <code>APP_KEY</code> (generated with e.g. <code>openssl rand -base64 32</code>) and <code>JWT_SECRET</code>
     </li>
     <li><b>only if</b> you do not want to use SQLite: also edit <code>DB_DATABASE</code>, <code>DB_HOST</code>, <code>DB_USERNAME</code>, <code>DB_PASSWORD</code>, <code>DB_CONNECTION</code> and <code>DB_PORT</code> according to your database.
-        (For instance for PostgreSQL have a look at <a href="https://github.com/fr0tt/benotes/issues/14">this issue</a>)
+        (You can have a look at <a href="/docs/installation/classic">classic</a> for this)
     </li>
     <li>
         <pre><code>docker run -p 8000:80 -it --rm \

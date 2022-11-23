@@ -48,10 +48,11 @@ export default {
 
   mounted () {
     document.querySelectorAll('h3').forEach(headline => {
-      console.log(headline)
       const id = headline.innerHTML.trim().toLowerCase()
         .replaceAll(' ', '-')
         .replaceAll(':', '')
+        .replace('<!--[-->', '')
+        .replace('<!--]-->', '')
       headline.id = id
       headline.parentElement.querySelector('a').href = '#' + id
     })
