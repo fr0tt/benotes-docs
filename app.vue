@@ -1,5 +1,6 @@
 <script setup lang="ts">
     useHead({
+        title: '',
         titleTemplate: (titleChunk) => {
             return titleChunk ? 'Benotes - ' + titleChunk : 'Benotes';
         }
