@@ -11,9 +11,10 @@ export default defineAppConfig({
       ]
     },
     {
-      name: 'Test',
+      name: 'Resources',
       pages: [
-        { name: 'Test test', link: '/docs/test-test' }
+        { name: 'Help', link: '/docs/resources/help' },
+        { name: 'Community', link: '/docs/resources/community' },
       ]
     }
   ]
