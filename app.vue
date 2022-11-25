@@ -3,7 +3,8 @@
         title: '',
         titleTemplate: (titleChunk) => {
             return titleChunk ? 'Benotes - ' + titleChunk : 'Benotes';
-        }
+        },
+        script:[{ src :'/piwik.js', body: true}]
     })
 </script>
 
