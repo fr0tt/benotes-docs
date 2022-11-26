@@ -1,7 +1,6 @@
 <script setup>
 const slots = useSlots()
 if (slots !== null) {
-    console.log(slots.default?.())
     useHead({
       title: slots.default?.()[0].children
     })
