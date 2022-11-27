@@ -58,7 +58,7 @@
         </div>
     </header>
 
-    <main class="flex px-4" @click="outsideSidebar">
+    <main class="flex px-4" @click="window.matchMedia('(max-width: 768px)') && outsideSidebar">
         <aside id="sidebar" class="fixed top-0 left-0 h-full md:relative hidden md:block w-80 px-12 py-12
             bg-white shadow-lg md:shadow-none z-50 transition-all duration-700">
             <section v-for="section in config.sidebar" :key="section.name" class="mb-4">
