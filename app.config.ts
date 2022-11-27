@@ -15,6 +15,7 @@ export default defineAppConfig({
       pages: [
         { name: 'Help', link: '/docs/resources/help' },
         { name: 'Community', link: '/docs/resources/community' },
+        { name: 'Changelog', link: '/docs/resources/changelog' },
       ]
     }
   ]
