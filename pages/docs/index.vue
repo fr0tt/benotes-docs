@@ -18,6 +18,7 @@
     <ul>
         <li>Bookmarks can be automatically saved with an image, title and description</li>
         <li>supports both markdown and a rich text editor</li>
+        <li>allows for as many user accounts as you like</li>
         <li>can be installed as a PWA on your mobile devices and desktop</li>
         <li>share content to this app (if installed as an PWA and supported by your browser)</li>
         <li>collections can be shared with your friends via a public available URL</li>

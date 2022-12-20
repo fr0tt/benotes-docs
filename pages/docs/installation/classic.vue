@@ -11,7 +11,7 @@
         <li>
             composer (<a href="https://getcomposer.org" target="_blank">https://getcomposer.org</a>)
         </li>
-        <li>PHP ≥ 7.2.5</li>
+        <li>PHP ≥ 7.3</li>
         <li>MySQL, Postgres, SQLite or SQL Server (currently only MySQL and PostgreSQL and SQLite
           were tested)
         </li>
@@ -27,10 +27,7 @@
         <li>
             <code>composer install</code>
             <Comment>
-                install dependencies accordingly to your php version.
-                <br> Please note that **php8-cli will fail**, use instead something similar to the
-                likes of: <code>/usr/bin/php7.4 /usr/local/bin/composer install</code> or any
-                other php-cli version between 7.2.5 and 7.4
+                install dependencies accordingly to your php version
             </Comment>
         </li>
         <li>
@@ -82,7 +79,7 @@ DB_DATABASE=storage/database.sqlite
 
       <ul>
         <li>
-          <code>php artisan install</code> or something like <code>/usr/bin/php7.4 artisan install</code>
+          <code>php artisan install</code>
           <Comment>amongst other: create database tables and fill them. Type yes if asked</Comment>
         </li>
         <li>
@@ -101,9 +98,27 @@ DB_DATABASE=storage/database.sqlite
           configure your webserver or use for testing purposes <code>php -S localhost:8000 -t public</code>
         </li>
       </ul>
+
+
+      <SubHeadline>Upgrade</SubHeadline>
+
+      <ul>
+        <li>
+          <code>git pull</code>
+          <Comment>upgrade files</Comment>
+        </li>
+        <li>
+          <code>composer install</code>
+          <Comment>upgrade dependencies</Comment>
+        </li>
+        <li>
+          <code>php artisan migrate</code>
+          <Comment>upgrade database schemas</Comment>
+        </li>
+        <li>
+          <code>php artisan cache:clear</code>
+          <Comment>clear cache</Comment>
+        </li>
+      </ul>
+
 </template>
-
-
-
-
-    <!-- https://raw.githubusercontent.com/fr0tt/benotes/master/installation.md -->
