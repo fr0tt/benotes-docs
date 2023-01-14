@@ -18,7 +18,7 @@
             <Comment>start docker container</Comment>
         </li>
         <li>
-            <code>docker-compose exec --user application benotes_app sh</code>
+            <code>docker-compose exec --user application app sh</code>
             <Comment>access the app service</Comment>
         </li>
         <li>
