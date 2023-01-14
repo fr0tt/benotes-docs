@@ -35,11 +35,6 @@
           <Comment>copy configuration file</Comment>
         </li>
         <li>
-          generate a random string for <code>APP_KEY</code> in your <code>.env</code> file e.g.
-          <code>openssl rand -base64 32</code>
-          <Comment>for security reasons</Comment>
-        </li>
-        <li>
           create a database
         </li>
         <li>

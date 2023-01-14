@@ -7,6 +7,7 @@ export default defineAppConfig({
         { name: 'Classic', link: '/docs/installation/classic' },
         { name: 'docker-compose', link: '/docs/installation/docker-compose' },
         { name: 'Docker', link: '/docs/installation/docker' },
+        { name: 'docker-compose dev', link: '/docs/installation/docker-compose-dev' },
         { name: 'Heroku', link: '/docs/installation/heroku' }
       ]
     },
