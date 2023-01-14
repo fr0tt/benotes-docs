@@ -4,10 +4,10 @@
 
     <ul>
         <li>
-            <code>git clone https://github.com/fr0tt/benotes_docker-compose</code>
+            <code>git clone https://github.com/fr0tt/benotes_docker-compose .</code>
             or
-            <code>wget https://github.com/fr0tt/benotes_docker-compose/archive/refs/heads/master.zip</code>
-            <Comment>create a new directory containing a docker-compose.yml and .env file</Comment>
+            <code>wget https://raw.githubusercontent.com/fr0tt/benotes_docker-compose/master/docker-compose.yml && wget https://raw.githubusercontent.com/fr0tt/benotes_docker-compose/master/.env.example</code>
+            <Comment>download a docker-compose.yml and .env file</Comment>
         </li>
         <li>
             <code>cp .env.example .env</code>
