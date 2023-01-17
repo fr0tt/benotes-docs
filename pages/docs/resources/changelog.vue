@@ -7,6 +7,8 @@
     <ul>
         <li>migrate from Lumen to Laravel (which also allows support for the newest PHP versions)</li>
         <li>implement Playwright with some browser tests (after spending many hours with it and Cypress and Dusk..)</li>
+        <li>simplify docker-compose setup</li>
+        <li>update Dockerfile</li>
         <li>use fonts locally instead of a CDN, as request by <a href="https://github.com/fr0tt/benotes/issues/45"><code>@MohamedElashri</code></a></li>
     </ul>
 

@@ -10,6 +10,9 @@
         <a href="https://github.com/fr0tt/benotes/discussions">discussion</a>.
         <br>
         There is always someone else out their with the same question.
+        <br><br>
+        You can also join the <a href="https://www.reddit.com/r/benotes/">Reddit community</a>
+        to learn more about Benotes and its community ... and ask any question you might have of course.
     </p>
 
     <SubHeadline>Have you a more personal or serious (, even security related) problem/concern ?</SubHeadline>

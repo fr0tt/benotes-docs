@@ -42,15 +42,25 @@
                     </span>
                 </NuxtLink>
             </div>
-            <!--
-            <div class="searchbar group px-2 py-0.5 border-2 rounded-xl border-gray-400">
-                <svg class="w-5 inline mr-2 align-middle text-gray-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/>
-                </svg>
-                <input class="align-middle text-orange-500 outline-none"
-                placeholder="Search"/>
+            <div>
+                <div>
+                    <a href="https://github.com/fr0tt/benotes" target="_blank" class="mx-2">
+                        <img class="w-8 inline-block" src="/Reddit_Mark_OnWhite.png" alt="Reddit Community"/>
+                    </a>
+                    <a href="https://github.com/fr0tt/benotes" target="_blank" class="mx-2">
+                        <img class="w-8 inline-block" src="/GitHub-Mark-64px.png" alt="GitHub"/>
+                    </a>
+                </div>
+                <!--
+                <div class="searchbar group px-2 py-0.5 border-2 rounded-xl border-gray-400">
+                    <svg class="w-5 inline mr-2 align-middle text-gray-500 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill="none" d="M0 0h24v24H0z"/><path d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"/>
+                    </svg>
+                    <input class="align-middle text-orange-500 outline-none"
+                    placeholder="Search"/>
+                </div>
+                -->
             </div>
-            -->
         </div>
         <div class="md:hidden px-4 md:px-8 py-2 border-t border-gray-500" @click="showSidebar">
             <svg class="w-6 inline-block fill-current text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" >
