@@ -12,6 +12,12 @@ export default defineAppConfig({
       ]
     },
     {
+      name: 'Extra Features',
+      pages: [
+        { name: 'Bookmarklet', link: '/docs/extras/bookmarklet' },
+      ]
+    },
+    {
       name: 'Resources',
       pages: [
         { name: 'Help', link: '/docs/resources/help' },
