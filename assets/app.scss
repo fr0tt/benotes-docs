@@ -14,7 +14,7 @@
             @apply text-gray-900 my-1;
         }
     }
-    li > code {
+    code {
         @apply text-gray-900 bg-gray-200;
         padding-left: 0.125rem;
         padding-right: 0.125rem;
@@ -25,7 +25,7 @@
     pre {
         @apply bg-gray-700 px-4 py-3 rounded;
         code {
-            @apply text-gray-100;
+            @apply text-gray-100 bg-transparent;
         }
     }
 }
