@@ -30,7 +30,7 @@
     <p>By default scheduled backups are created every night. If you wish to change that
     add the following to your <code>.env</code> file:</p>
 
-    <code>BACKUP_INTERVAL = 0 0 */7 * *</code>
+    <code>BACKUP_INTERVAL = "0 0 */7 * *"</code>
     <Comment>This would translate to a weekly backup.</Comment>
 
     <br>
