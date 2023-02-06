@@ -44,7 +44,7 @@
             </div>
             <div>
                 <div>
-                    <a href="https://github.com/fr0tt/benotes" target="_blank" class="mx-2">
+                    <a href="https://www.reddit.com/r/benotes/" target="_blank" class="mx-2">
                         <img class="w-8 inline-block" src="/Reddit_Mark_OnWhite.png" alt="Reddit Community"/>
                     </a>
                     <a href="https://github.com/fr0tt/benotes" target="_blank" class="mx-2">
