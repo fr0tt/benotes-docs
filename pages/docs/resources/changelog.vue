@@ -2,6 +2,14 @@
 
     <Headline>Changelog</Headline>
 
+    <SubHeadline>2.5.0</SubHeadline>
+    <ul>
+        <li>implement nested collections</li>
+        <li>solved as many bugs caused by that as possible</li>
+        <li>replace collection selection with a tree selection</li>
+        <li>fix initial tag bug</li>
+    </ul>
+
     <SubHeadline>2.4.0</SubHeadline>
     <p>This is a major update technically speaking:</p>
     <ul>
