@@ -17,6 +17,7 @@
 
     <ul>
         <li>Bookmarks can be automatically saved with an image, title and description</li>
+        <li>post and bookmark items can be stored in collections that can be nested</li>
         <li>supports both markdown and a rich text editor</li>
         <li>allows for as many user accounts as you like</li>
         <li>can be installed as a PWA on your mobile devices and desktop</li>
