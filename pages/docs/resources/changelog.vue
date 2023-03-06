@@ -2,6 +2,12 @@
 
     <Headline>Changelog</Headline>
 
+    <SubHeadline>2.6.0</SubHeadline>
+    <ul>
+        <li>added a dark theme</li>
+        <li>added the ability to add new themes with a theme folder (and a manual rebuild afterwards)</li>
+    </ul>
+
     <SubHeadline>2.5.0</SubHeadline>
     <ul>
         <li>implement nested collections</li>
