@@ -12,7 +12,7 @@
             <Comment>download a docker-compose.yml and .env file</Comment>
         </li>
         <li>
-            in your new docker-compose.yml file change the image from <code>fr0tt/benotes</code> to <code>fr0tt/benotes:2.7.0-beta</code>
+            in your new docker-compose.yml file change the image from <code>fr0tt/benotes:latest</code> to <code>fr0tt/benotes:2.7.0-beta</code>
             <Comment>This step is only required while still in beta</Comment>
         </li>
         <li>

@@ -90,7 +90,7 @@
 
 <style>
   html {
-    background: none;
+    background: none !important;
   }
   .documentation {
     max-width: 1200px;
