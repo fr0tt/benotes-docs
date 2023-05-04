@@ -19,6 +19,9 @@
     <pre><code>0 * * * * cd /path-to-your-project && php artisan schedule:run >> /dev/null 2>&1</code></pre>
     <Comment>This will check every hour if there is any task to run.</Comment>
 
+    <p>You also have to change in your .env file:</p>
+    <code>RUN_BACKUP = true</code>
+
     <br>
 
     <p>If you installed Benotes with Docker you have to add instead:</p>

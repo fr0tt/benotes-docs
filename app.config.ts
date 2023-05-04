@@ -6,6 +6,7 @@ export default defineAppConfig({
       pages: [
         { name: 'Classic', link: '/docs/installation/classic' },
         { name: 'docker-compose', link: '/docs/installation/docker-compose' },
+        { name: 'docker-compose BETA', link: '/docs/installation/docker-compose-beta' },
         { name: 'Docker', link: '/docs/installation/docker' },
         { name: 'docker-compose dev', link: '/docs/installation/docker-compose-dev' },
         { name: 'Heroku', link: '/docs/installation/heroku' }
@@ -14,6 +15,7 @@ export default defineAppConfig({
     {
       name: 'Extra Features',
       pages: [
+        { name: 'Thumbnails', link: '/docs/extras/thumbnails' },
         { name: 'Backup', link: '/docs/extras/backup' },
         { name: 'Bookmarklet', link: '/docs/extras/bookmarklet' },
       ]
