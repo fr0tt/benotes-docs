@@ -18,7 +18,7 @@ Docker Image can be found <a href="https://hub.docker.com/r/fr0tt/benotes">here<
         (You can have a look at <a href="/docs/installation/classic">classic</a> for this)
     </li>
     <li>
-        <pre><code>docker run -p 8000:80 -it --rm \
+        <pre><code>docker run -p 8000:80 -itd --rm \
     -v benotes_storage:/var/www/storage \
     -v "$(pwd)"/nginx/logs/:/var/lib/nginx/logs/ \
     -v "$(pwd)"/.env:/var/www/.env \

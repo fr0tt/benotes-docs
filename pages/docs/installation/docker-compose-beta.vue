@@ -20,6 +20,10 @@
             <Comment>"enable" the .env file to be detected/used by docker-compose</Comment>
         </li>
         <li>
+            optional: <b>only</b> change in your <code>.env</code> file <code>APP_PORT</code>  
+            if you wish to run this app under a different port
+        </li>
+        <li>
             <code>docker-compose up -d</code>
             <Comment>start docker container</Comment>
         </li>
