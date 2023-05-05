@@ -71,7 +71,9 @@ permissions and terrible when it comes to inserting data beforehand.</p>
     <p>Short answer: You don't have to do anything. Just use <code>fr0tt/benotes:2.7.0-beta</code> as image while in beta.</p>
     <p>Long answer: If you keep your existing docker-compose.yml you are going to use bind mounts
 which should not be a problem for you since it had to work so far and the new image uses the same 
-exact paths as before. However if you would like to adapt and use the new docker-compose.yml file
+exact paths as before. Also you are going to use MySQL instead of PostgreSQL but that should not be a 
+problem either. <br>
+However if you would like to adapt and use the new docker-compose.yml file
 you need to start the container once before you use it to let the docker engine create and bootstrap 
 the volume for you. After that you can copy all subfolders of <code>data</code> into the newly
 created volume which might be located at <code>/var/lib/docker/volumes/yourBenotesInstallationDirectoryName_benotes_storage/_data</code>
