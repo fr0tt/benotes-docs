@@ -24,11 +24,11 @@
             if you wish to run this app under a different port
         </li>
         <li>
-            <code>docker-compose up -d</code>
+            <code>docker compose up -d</code>
             <Comment>start docker container</Comment>
         </li>
         <li>
-            <code>docker-compose exec --user application app sh</code>
+            <code>docker compose exec --user application app sh</code>
             <Comment>access the app service</Comment>
         </li>
         <li>
@@ -41,7 +41,7 @@
     <SubHeadline>Upgrade</SubHeadline>
     <ul>
         <li>
-            <code>docker-compose pull && docker-compose up -d</code>
+            <code>docker compose pull && docker compose up -d</code>
             <Comment>Restart the docker container and fetch a new image if available</Comment>
         </li>
     </ul>
