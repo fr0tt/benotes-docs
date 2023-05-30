@@ -5,7 +5,7 @@
     <SubHeadline>Prerequisite for Classic</SubHeadline>
 
     <p>In order to add missing thumbnails you need to have a chromium browser installed. 
-Newer docker images include this by default.</p>
+Newer docker images include all of this by default without any intervention.</p>
 
     <ul>
         <li>install chromium or chrome (e.g. <code>sudo apt install chromium-browser</code>)  
@@ -32,12 +32,6 @@ done this for the <a href="/docs/extras/backup">backups</a>:</p>
     <Comment>This will check every hour if there is any task to run.</Comment>
 
     <br>
-
-    <p>If you installed Benotes with Docker you have to add instead (if not already added):</p>
-    
-    <pre><code>0 * * * * cd /path-to-your-project && docker exec --user www-data -it benotes php artisan schedule:run >> /dev/null 2>&1</code></pre>
-
-    <br><br>
 
     <p>By default missing thumbnails are generated every 6 hours. If you wish to change that
     add the following to your <code>.env</code> file:</p>
