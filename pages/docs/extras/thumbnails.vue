@@ -2,6 +2,8 @@
 
     <Headline>Add missing thumbnails</Headline>
 
+    <p>This entire feature is automatically enabled within the docker image.</p>
+
     <SubHeadline>Prerequisite for Classic</SubHeadline>
 
     <p>In order to add missing thumbnails you need to have a chromium browser installed. 
@@ -23,7 +25,7 @@ Newer docker images include all of this by default without any intervention.</p>
     <code>php artisan thumbnail:generate</code>
 
 
-    <SubHeadline>Schedule thumbnail generation</SubHeadline>
+    <SubHeadline>Schedule thumbnail generation for Classic</SubHeadline>
 
     <p>Schedule them by adding this line to your servers cron entries if you have not already 
 done this for the <a href="/docs/extras/backup">backups</a>:</p>
@@ -33,7 +35,7 @@ done this for the <a href="/docs/extras/backup">backups</a>:</p>
 
     <br>
 
-    <p>By default missing thumbnails are generated every 6 hours. If you wish to change that
+    <p>By default missing thumbnails are generated every 2 hours. If you wish to change that
     add the following to your <code>.env</code> file:</p>
 
     <code>THUMBNAIL_FILLER_INTERVAL = "0 0 */7 * *"</code>

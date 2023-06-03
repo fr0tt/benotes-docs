@@ -2,7 +2,7 @@
 
     <Headline>Bookmarklet</Headline>
 
-    <SubHeadline>What is a Bookmarklet</SubHeadline>
+    <SubHeadline>What is a Bookmarklet?</SubHeadline>
 
     <p>It is simply put a kind of browser extension and can be used
         in this case as a shortcut for creating new posts.</p>

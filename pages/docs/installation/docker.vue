@@ -31,8 +31,6 @@ Docker Image can be found <a href="https://hub.docker.com/r/fr0tt/benotes">here<
         <Comment>reference the image by its name, in this case as previously defined: benotes</Comment>
     </li>
     <li>
-        <code>php artisan migrate</code></li>
-    <li>
         <code>php artisan install --only-user</code>
         <Comment>execute those two commands in your container to initialize the application</Comment>
     </li>

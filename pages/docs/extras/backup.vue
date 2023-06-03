@@ -12,23 +12,22 @@
     <code>php artisan backup:run</code>
 
 
-    <SubHeadline>Schedule backups</SubHeadline>
+    <SubHeadline>Schedule backups for Classic</SubHeadline>
 
     <p>Schedule them by adding this line to your servers cron entries:</p>
 
     <pre><code>0 * * * * cd /path-to-your-project && php artisan schedule:run >> /dev/null 2>&1</code></pre>
     <Comment>This will check every hour if there is any task to run.</Comment>
 
-    <p>You also have to change in your .env file:</p>
+    <p>You also have to change in your <code>.env</code> file:</p>
     <code>RUN_BACKUP = true</code>
 
-    <br>
+    <SubHeadline>Schedule backups for Docker</SubHeadline>
 
-    <p>If you installed Benotes with Docker you have to add instead:</p>
+    <p>If you installed Benotes with Docker you only have to add to your <code>.env</code> file:</p>
+    <code>RUN_BACKUP = true</code>
 
-    <pre><code>0 * * * * cd /path-to-your-project && docker exec -it benotes php artisan schedule:run >> /dev/null 2>&1</code></pre>
-
-    <br><br>
+    <SubHeadline>Backup Interval & Storage options</SubHeadline>
 
     <p>By default scheduled backups are created every night. If you wish to change that
     add the following to your <code>.env</code> file:</p>
