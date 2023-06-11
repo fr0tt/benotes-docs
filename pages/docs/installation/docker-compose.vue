@@ -56,13 +56,17 @@ permissions and terrible when it comes to inserting data beforehand.</p>
 #- benotes_storage:/var/www/storage</code></pre>
         <li><code>mkdir -p data/storage</code></li>
         <li>
-            <code>sudo chown -R www-data:www-data data/storage</code>
-            <Comment>Make this directory writable for the webservers user of the docker container</Comment>
+            <code>docker compose exec app sh</code>
+            <Comment>access app container as root</Comment>
+        </li>
+        <li>
+            <code>chown -R www-data:www-data storage && chown -R 774 storage</code>
+            <Comment>Make this directory writable for the webserver</Comment>
         </li>
     </ul>
 
     <SubHeadline>Migrating from v2.6 and earlier</SubHeadline>
-    <p>Short answer: You don't have to do anything. Just use <code>fr0tt/benotes:2.7.0-beta</code> as image while in beta.</p>
+    <p>Short answer: You only have to make sure that the <code>storage</code> directory is owned by www-data (see <a href="#volumes">Volume section</a> above).</p>
     <p>Long answer: If you keep your existing docker-compose.yml you are going to use bind mounts
 which should not be a problem for you since it had to work so far and the new image uses the same 
 exact paths as before. Also you are going to use MySQL instead of PostgreSQL but that should not be a 
