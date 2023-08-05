@@ -1,6 +1,15 @@
 <template>
     <Headline>Changelog</Headline>
 
+    <SubHeadline>2.7.2</SubHeadline>
+    <ul>
+        <li>fix database backup</li>
+        <li>extend thumbnail command</li>
+        <li>gather more than just a thumbnail when using chrome if needed</li>
+        <li>prevent system from replacing a screenshot with something worse if the URL has not changed</li>
+        <li>allow bringing your on description via api request</li>
+    </ul>
+
     <SubHeadline>2.7.1</SubHeadline>
     <ul>
         <li>fix lower case search with PostgreSQL</li>
