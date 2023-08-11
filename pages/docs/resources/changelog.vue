@@ -1,6 +1,13 @@
 <template>
     <Headline>Changelog</Headline>
 
+    <SubHeadline>2.8.0</SubHeadline>
+    <ul>
+        <li>import bookmarks</li>
+        <li>export bookmarks</li>
+        <li>support webp thumbnails</li>
+    </ul>
+
     <SubHeadline>2.7.2</SubHeadline>
     <ul>
         <li>fix database backup</li>
