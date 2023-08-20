@@ -19,6 +19,14 @@
             not changed
         </li>
         <li>allow bringing your on description via api request</li>
+        <p>
+            thanks to
+            <a
+                href="https://www.reddit.com/r/benotes/comments/14xiv9v/post_couldnt_be_created_message_in_the_lower/">
+                <code>/u/SaleB81</code>
+            </a>
+            for his observations
+        </p>
     </ul>
 
     <SubHeadline>2.7.1</SubHeadline>
@@ -70,7 +78,7 @@
         <li>update Dockerfile</li>
         <li>
             use fonts locally instead of a CDN, as request by
-            <a href="https://github.com/fr0tt/benotes/issues/45"></a>
+            <a href="https://github.com/fr0tt/benotes/issues/45">
                 <code>@MohamedElashri</code>
             </a>
         </li>
