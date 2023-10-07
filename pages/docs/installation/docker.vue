@@ -81,22 +81,7 @@
     <SubHeadline>Upgrade</SubHeadline>
 
     <ul>
-        <li>
-            <pre><code>docker run -p 8000:80 -it --rm \
-    -v benotes_storage:/var/www/storage \
-    -v "$(pwd)"/nginx/logs/:/var/lib/nginx/logs/ \
-    -v "$(pwd)"/.env:/var/www/.env \
-    --env-file ./.env \
-    --name benotes fr0tt/benotes</code></pre>
-            <Comment>rerun the container in order to use the latest build</Comment>
-        </li>
-        <li>
-            <code>docker exec -it benotes sh</code>
-        </li>
-        <li>
-            <code>sh docker/update.sh</code>
-            <Comment>type yes if asked</Comment>
-        </li>
+        <li>rerun the container in order to use the latest build</li>
     </ul>
 
     <br />
