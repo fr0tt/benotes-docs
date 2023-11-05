@@ -1,6 +1,35 @@
 <template>
     <Headline>Changelog</Headline>
 
+    <SubHeadline>2.8.2</SubHeadline>
+    <ul>
+        <li>fix search bug</li>
+        <li>fix refresh token</li>
+        <p>
+            thanks to
+            <a href="https://github.com/roughnecks">
+                <code>@roughnecks</code>
+            </a>
+            for her observations and GitHub issues
+        </p>
+    </ul>
+
+    <SubHeadline>2.8.1</SubHeadline>
+    <ul>
+        <li>fix search bug</li>
+        <li>update line endings</li>
+        <li>change thumbnail exception</li>
+        <li>increase time to scroll</li>
+        <li>fix sqlite backup</li>
+        <p>
+            thanks to
+            <a href="https://github.com/roughnecks">
+                <code>@roughnecks</code>
+            </a>
+            for her observations and GitHub issues
+        </p>
+    </ul>
+
     <SubHeadline>2.8.0</SubHeadline>
     <ul>
         <li>import bookmarks</li>

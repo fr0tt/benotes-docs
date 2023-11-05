@@ -82,7 +82,7 @@ DB_PASSWORD=yourDatabasePassword</code></pre>
         <Tab name="Sqlite">
             <pre><code>
 DB_CONNECTION=sqlite
-DB_DATABASE=/absolute/path/to/your/database.sqlite
+DB_DATABASE=/absolute/path/to/your/storage/database.sqlite
           </code></pre>
         </Tab>
     </Tabs>
