@@ -14,12 +14,7 @@
             <a href="https://getcomposer.org" target="_blank">https://getcomposer.org</a>
             )
         </li>
-        <li>
-            PHP ≥ 7.3
-            <Comment>
-                PHP 8 and above is advised since support for PHP7 was discontinued
-            </Comment>
-        </li>
+        <li>PHP ≥ 8.0.2</li>
         <li>
             MySQL, Postgres, SQLite or SQL Server (currently only MySQL and PostgreSQL and
             SQLite were tested)
